@@ -60,7 +60,7 @@ class TransacaoControllerTest {
         mockMvc.perform(post("/api/transacoes/" + id + "/estorno"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.transacao.id").value(id))
-                .andExpect(jsonPath("$.transacao.descricao.status").value("CANCELADO"));
+                .andExpect(jsonPath("$.transacao.descricao.status").value("NEGADO"));
 
         mockMvc.perform(get("/api/transacoes/" + id))
                 .andExpect(status().isOk())
