@@ -16,7 +16,7 @@ Documentação interativa disponível em **Swagger UI**.
 ## Tecnologias
 - Java 17 • Spring Boot 3 • Spring Web • Bean Validation
 - JUnit 5 + MockMvc
-- Swagger (springdoc-openapi)
+- Swagger
 - Maven
 
 ---
